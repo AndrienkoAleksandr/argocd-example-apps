@@ -18,3 +18,8 @@ spec:
         name: guestbook-ui
         ports:
         - containerPort: 80
+        command:
+        - 'sh'
+        args:
+        - '-c'
+        - 'tail -f /dev/null'
